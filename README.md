@@ -1,6 +1,12 @@
-# Ember-cli-ally
+# ember-cli-ally
 
-This README outlines the details of collaborating on this Ember addon.
+Add this as a `devDependency` in your ember-cli application `package.json` file and you can access ally.js with:
+
+```javascript
+import Ally from 'ally'
+```
+
+All the usual ember-cli addon info applies if you want to pitch in on cleaning this up or augmenting it.
 
 ## Installation
 

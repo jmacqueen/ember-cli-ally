@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-ally",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Expose ally.js to ember-cli apps as 'ally'",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Jonathan MacQueen",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
