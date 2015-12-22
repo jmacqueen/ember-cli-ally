@@ -11,6 +11,6 @@ module.exports = {
   // }
 
   afterInstall: function(/*options*/) {
-    return this.addBowerPackageToProject('ally', 'https://github.com/medialize/ally.js/releases/download/1.0.1/ally.js.zip');
+    // return this.addBowerPackageToProject('ally.js', '1.0.1');
   }
 };

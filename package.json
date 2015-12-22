@@ -11,13 +11,17 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository":   {
+    "type" : "git",
+    "url" : "https://github.com/jmacqueen/ember-cli-ally"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
   "author": "Jonathan MacQueen",
   "license": "MIT",
   "devDependencies": {
+    "ally.js": "1.0.1",
     "broccoli-asset-rev": "^2.2.0",
     "ember-cli": "1.13.13",
     "ember-cli-app-version": "^1.0.0",
