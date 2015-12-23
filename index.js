@@ -1,7 +1,7 @@
 /* jshint node: true */
 'use strict';
 
-var BabelTranspiler = require('broccoli-babel-transpiler');
+// var BabelTranspiler = require('broccoli-babel-transpiler');
 var Funnel = require('broccoli-funnel');
 var MergeTrees = require('broccoli-merge-trees');
 
@@ -40,8 +40,20 @@ var MergeTrees = require('broccoli-merge-trees');
       var ally = new Funnel('bower_components/ally.js/src', {
         destDir: 'modules/ally'
       });
+      var platform = new Funnel('bower_components/platform.js', {
+        files: ['platform.js'],
+        destDir: 'modules'
+      });
+      var findIndex = new Funnel('bower_components/Array.prototype.findIndex', {
+        files: ['array.prototype.findindex.js'],
+        destDir: 'modules'
+      });
+      var cssEscape = new Funnel('bower_components/CSS.escape', {
+        files: ['css.escape.js'],
+        destDir: 'modules'
+      });
 
-      return new MergeTrees([addonTree, ally]);
+      return new MergeTrees([addonTree, ally, platform, findIndex, cssEscape]);
     }
 };
 
